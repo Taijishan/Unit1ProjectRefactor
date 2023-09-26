@@ -20,7 +20,7 @@ public class TipCalculator {
         getTotalTipRounded = Math.round(getTotalTip * 100.0) / 100.0;
         getGrandTotal = billNoTip + getTotalTip;
         getGrandTotalRounded = Math.round(getGrandTotal * 100.0) / 100.0;
-        getIndividualTip = getTotalTip + peoplesPresent;
+        getIndividualTip = getTotalTip/peoplesPresent;
         getIndividualTipRounded = Math.round(getIndividualTip * 100.0) / 100.0;
         getIndividualTotal = getGrandTotal/peoplesPresent;
         getIndividualTotalRounded = Math.round(getIndividualTotal * 100.0) / 100.0;
